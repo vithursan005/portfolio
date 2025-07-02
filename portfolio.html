@@ -2,81 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kanesamoorthy Vithursan - portfolio</title>
+    <title>Kanesamoorthy Vithursan - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            padding: 0; 
+            margin: 0; 
+        }
+        .portfolio-container {
+            max-width: 72rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            
+            display: flex; 
+        }
+        .left-column {
+            padding: 0.75rem;
+            background: linear-gradient(to bottom right, #2563eb, #1e40af);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;  
+        }
+        .left-column h2.welcome-heading {
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .left-column p.address {
+            font-size: 1rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.9;
+        }
+        .profile-picture {
+            border-radius: 9999px;
+            border: 4px solid #ffffff;
+            width: 9rem;
+            height: 9rem;
+            object-fit: cover;
+        }
+        .right-column {
+            padding: 2rem;
+        }
+        .right-column h1.main-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1f2937;
+            margin-bottom: 0.75rem;
+            text-align: left;
+        }
+        .right-column h1.main-name {
+            font-size: 3rem;
+        }
+        section {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .left-column section {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            text-align: left;
+            width: 100%;
+        }
+        .left-column section h2 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+        .left-column section h3 {
+            color: #ffffff;
+            font-size: 0.95rem;
+
+        }
+        .right-column section h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .right-column section p {
+            color: #374151;
+            line-height: 1.4;
+        }
+
+        .right-column section strong {
+            font-weight: 600;
+            color: #2563eb;
+        }
+        .right-column section h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        .right-column ul {
+            list-style-position: inside;
+            color: #374151;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        
-        <header>
-            <p>WELCOME MY PORTFOLIO !</p>
-            <h1><b>KANESAMOORTHY VITHURSAN</b></h1>
-            <p>SIVAKULA VEETHY, URUMPIRAI, WEST URUMPIRAI, JAFFNA</p>
-            <div>
-                <right><img src=C:\Users\Admin\Documents\GitHub\portfolio\photos\my_photo.jpg alt="Profile Picture" width="150" height="150"></right>
+    <div class="portfolio-container">
+        <div class="left-column">
+            <h2 class="welcome-heading">WELCOME TO MY PORTFOLIO!</h2>
+
+            <div class="profile">
+                <img src=C:\Users\Admin\Documents\GitHub\portfolio\photos\my_photo.jpg alt="Profile Picture" class="profile-picture">
             </div>
-            <div>
+
+            <p class="address">SIVAKULA VEETHY, URUMPIRAI, WEST URUMPIRAI, JAFFNA</p>
+
+            <div class="contact-info">
                 <p>For contact: <b>077-566-1784</b></p>
                 <p><b>kvithusan5@gmail.com</b></p>
             </div>
-            
-        </header>
-        <hr>
+            <section>
+                <h2>Skills & Experience</h2>
+                <h3>Skills and Abilities:</h3>
+                <ul>
+                    <li><b>Java</b></li>
+                    <li><b>Python</b></li>
+                    <li><b>Adaptability and problem-solving</b></li>
+                    <li><b>Time management and organization</b></li>
+                    <li><b>Collaborative teamwork and interpersonal skills</b></li>
+                </ul>
 
-        
-        <section>
-            <h2>Profile</h2>
-            <p>
-                I'm a <strong>passionate</strong> and <strong>driven</strong> person who loves <strong>learning</strong>, <strong>growing</strong>, and making the most out of life. 
-                I'm fueled by <strong>curiosity</strong> and truly believe in the power of <strong>education</strong>, <strong>creativity</strong>, and <strong>teamwork</strong> 
-                to make a positive impact on the world.
-            </p>
+                <h3 >Additional skills:</h3>
+                <ul>
+                    <li><b>Microsoft Office</b>: Word, Excel and PowerPoint</li>
+                    <li>Language: <b>Tamil (native)</b>, <b>English (fluency)</b></li>
+                </ul>
 
-        </section>
-        <hr>
+                <h3>Experience in school:</h3>
+                <ul>
+                    <li>School science union member</li>
+                    <li>School football team player</li>
+                    <li>School class leader</li>
+                </ul>
+            </section>
+        </div>
+        <div class="right-column">
+            <h1 class="main-name">KANESAMOORTHY VITHURSAN</h1>
 
-        
-        <section>
-            <h2>Skills & Experience</h2>
-            <h3>Skills and Abilities:</h3>
-            <ul>
-                <li><b>Java</b></li>
-                <li><b>python</b></li>
-                <li><b>Adaptability and problem-solving</b></li>
-                <li><b>Time management and organization</b></li>
-                <li><b>Collaborative teamwork and interpersonal skills</b></li>
-            </ul>
-
-            <h3>Additional skills:</h3>
-            <ul>
-                <li><b>Microsoft Office</b>: Word, Excel and PowerPoint</li>
-                <li>Language: <b>Tamil (native)</b>, <b>English (fluency)</b></li>
-            </ul>
-
-            <h3>Experience in school:</h3>
-            <ul>
-                <li>School science union member</li>
-                <li>School football team player</li>
-                <li>School class leader</li>
-            </ul>
-        </section>
-        <hr>
-	<section>
+            <section>
+                <h2>Profile</h2>
+                <p>
+                    I'm a <strong>passionate</strong> and <strong>driven</strong> person who loves <strong>learning</strong>, <strong>growing</strong>, and making the most out of life.
+                    I'm fueled by <strong>curiosity</strong> and truly believe in the power of <strong>education</strong>, <strong>creativity</strong>, and <strong>teamwork</strong>
+                    to make a positive impact on the world.
+                </p>
+            </section>
+            <section>
                 <h2>Education</h2>
 
-		<div>
+                <div class="education-item">
                     <h3>University of Jaffna</h3>
                     <p>
                         Currently pursuing a Bachelor of Science in Computer Science. My educational journey has provided me with a solid foundation in computer science, and I am excited to develop further in this field to broaden my knowledge and expertise.
                     </p>
                 </div>
+
                 <div>
                     <h3>J/Vayavilan Central College.</h3>
-					 <p><strong>A/L Examination (2021/2022):</strong> Achieved A in Physics, B in Chemistry, and B in Combined Mathematics, General English: C, Z-score: 1.4638.</p>
+                    <p><strong>A/L Examination (2021/2022):</strong> Achieved A in Physics, B in Chemistry, and B in Combined Mathematics, General English: C, Z-score: 1.4638.</p>
                     <p><strong>O/L Examination (2017, December):</strong> Achieved A grades in SIVANERI, LANG&LIT(TAMIL), SCIENCE, MATHEMATICS, HISTORY, ART, and INF. & COM. TEC. B grade in ENGLISH and BUSINESS. & ACCOUNTS.</p>
                 </div>
-                
             </section>
-        <hr>
+        </div>
     </div>
 </body>
 </html>
